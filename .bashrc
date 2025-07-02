@@ -135,4 +135,6 @@ unset __conda_setup
 # <<< conda initialize <<<
 
 alias login-pi='ssh cal.lees@192.168.0.136'
-
+ghcreate() {
+	gh repo create "$1" --source=. "$2"
+}
