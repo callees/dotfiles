@@ -13,7 +13,7 @@ exec "xrandr --output DP-0 --primary --mode 1920x1080 --rate 239.76 --output HDM
 set $mod Mod4
 exec "setxkbmap gb"
 
-exec --no-startup-id feh --bg-scale ~/repos/dotfiles/wos-twer/wos-bg.png
+exec --no-startup-id feh --bg-scale /home/wizardofsalem/repos/dotfiles/bg/merlin.png
 exec --no-startup-id picom 
 # class                         border          background      text            indicator       child_border
 client.focused                  #ffd700          #6a0dad        #ffff33         $coloratt       #000000
@@ -202,5 +202,11 @@ bar {
 }
 
 bindsym $mod+b exec firefox
+
 bindsym $mod+Shift+Ctrl+c exec kitty -e vim ~/.config/i3/config
-bindsym $mod+l exec xsecurelock
+
+bindsym $mod+u exec xsecurelock
+
+bindsym Print exec gnome-screenshot -i
+bindsym $mod+Print exec gnome-screenshot -a
+bindsym $mod+g exec gitkraken
