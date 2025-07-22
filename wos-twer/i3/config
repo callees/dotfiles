@@ -203,3 +203,4 @@ bar {
 
 bindsym $mod+b exec firefox
 bindsym $mod+Shift+Ctrl+c exec kitty -e vim ~/.config/i3/config
+bindsym $mod+l exec xsecurelock
