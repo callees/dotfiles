@@ -13,8 +13,8 @@ exec "xrandr --output DP-0 --primary --mode 1920x1080 --rate 239.76 --output HDM
 set $mod Mod4
 exec "setxkbmap gb"
 
-
-
+exec --no-startup-id feh --bg-scale ~/repos/dotfiles/wos-twer/wos-bg.png
+exec compton
 # class                         border          background      text            indicator       child_border
 client.focused                  #ffd700          #6a0dad        #ffff33         $coloratt       #000000
 client.focused_inactive         #333333          #6a0dad        #ffff33         $coloratt       #000000
